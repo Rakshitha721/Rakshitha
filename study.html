@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Group System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #studyGroups {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .studyGroup {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+        }
+
+        #createGroupForm, #joinGroupForm {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Study Group System</h1>
+
+    <div id="createGroupForm">
+        <h2>Create a Study Group</h2>
+        <br>
+        <form id="createForm">
+            <label for="groupName" width="50px" height="15px">Group Name:</label>
+            
+            <input type="text" id="groupName" required><br>
+            <br>
+
+            <label for="groupDescription" width="50px" height="10px">Group Description: </label>
+            <textarea id="groupDescription" required></textarea><br>
+            <br>
+
+            <label for="course">Course:</label>
+            <input type="text" id="course" required><br>
+            <br>
+
+            <label for="meetingFrequency">Meeting Frequency:</label>
+            
+            <input type="text" id="meetingFrequency" required><br>
+            <br>
+            <br>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" required><br>
+            <br>
+
+            <label for="sizeLimit">Size Limit:</label>
+            <input type="number" id="sizeLimit" required><br>
+            <br>
+            <br>
+            
+
+            <button type="button" onclick="createStudyGroup()">Create Group</button>
+        </form>
+    </div>
+
+    <div id="joinGroupForm">
+        <h2>Join a Study Group</h2>
+        <form id="joinForm">
+            <label for="userId">Your ID:</label><br>
+            <input type="number" id="userId" required><br>
+            <br>
+            <br>
+            
+            
+
+            <label for="groupId">Group ID:</label>
+            <input type="number" id="groupId" required><br>
+            <br>
+            <br>
+
+            <button type="button" onclick="joinStudyGroup()">Join Group</button>
+            <br>
+            <br>
+        </form>
+    </div>
+
+    <h2>Available Study Groups</h2>
+    <div id="studyGroups"></div>
+    <br>
+
+    <script>
+        function createStudyGroup() {
+            // Implement the logic to send a request to the server to create a study group
+            // Update the UI with the new study group
+        }
+
+        function joinStudyGroup() {
+            // Implement the logic to send a request to the server to join a study group
+            // Update the UI with the joined study group
+        }
+
+        // Fetch and display existing study groups
+        function fetchStudyGroups() {
+            // Implement the logic to fetch study groups from the server
+            // Update the UI with the fetched study groups
+        }
+
+        // Initial fetch when the page loads
+        fetchStudyGroups();
+    </script>
+</body>
+</html>

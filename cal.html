@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Study Scheduler</title>
+    <link rel="stylesheet" href="style2.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Study Scheduler</h1>
+
+        <div class="scheduler">
+            <div class="scheduler-header">
+                <button id="prevMonthBtn" onclick="prevMonth()">Previous Month</button>
+                <h2 id="currentMonth"></h2>
+                <button id="nextMonthBtn" onclick="nextMonth()">Next Month</button>
+            </div>
+
+            <div class="calendar" id="calendar"></div>
+
+            <div class="event-form">
+                <h3>Schedule Study Session</h3>
+                <label for="sessionTopic">Session Topic:</label>
+                <input type="text" id="sessionTopic" required>
+                <label for="sessionDate">Session Date:</label>
+                <input type="date" id="sessionDate" required>
+                <button onclick="scheduleSession()">Schedule Session</button>
+                
+
+            </div>
+        </div>
+    </div>
+    <div>
+        <script src="calen.js"></script>
+    </div>
+
+   
+
+</body>
+
+</html>
